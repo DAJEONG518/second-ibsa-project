@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>더조은 피부과</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+		<script src="js/jquery.transit.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/sub1.css">
+		
+		<style></style>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id ="top">
+					<h1><a href="index_main.html"><img src="img/re_logo2.png" alt="logo" width="100%"></a></h1>
+					<p class="gnv"><a href="index_menu.html">&equiv;</a></p>
+				</div>
+			</header>
+			<!---header 끝--->
+			
+			<section> 
+				<h2>
+					<img src="img/comma.png" alt="" width="40px">풀리지 않는 매몰법<br>
+					<span>DOUBLE EYELID</span>
+				</h2>
+
+				<div id = "firstSec">
+					<div id="firstOne">
+						<h3 >EYE</h3>
+						<p>매직매몰법은 아주 정교한 수술방법 입니다 <br>
+							거울을 보면서 자연스럽게 쌍꺼풀의 크카와 모양을 정하고 디자인을 하게 됩니다.<br>
+							기존의 매몰법과 달리 절개법에서 직접적으로봉합해 줌으로써<br>
+							유착이 확실히 생기게 해줍니다.
+						</p>
+					</div>
+					<script>
+						$(function(){
+							$('#firstOne, #firstTwo p').css({opacity:0});
+							$('#firstOne').animate({opacity:1},2000);
+							$('#firstTwo p').each(function(idx){
+								$(this).delay(800*idx).animate({opacity:1, top:0},1000);
+							});
+						});
+					</script>
+					<div id = "firstTwo">
+						<p>
+							<img src="img/comma.png" alt="comma" width="20px">
+							직접 봉합!<br>
+							<span>매직 매몰법은 풀리는 경우가<br>거의 없습니다.</span>
+						</p>
+						<p>
+							<img src="img/comma.png" alt="comma" width="20px">
+							NO 붓기!<br>
+							<span>매직 매몰법은 풀리는 경우가<br>거의 없습니다.</span>
+						</p>
+						<p>
+							<img src="img/comma.png" alt="comma" width="20px">
+							명품 매몰법!<br>
+							<span>매직 매몰법은 풀리는 경우가<br>거의 없습니다.</span>
+						</p>
+					</div>
+				</div>
+				<div id = "secondSec">
+					<div id="secondOne">
+						<h4>매몰법</h4>
+						<p>절개부위는 1바늘씩 봉합하고, 수술 다음날 실밥과 테이프를 제거하면<br>
+						병월 치료가 끝나게 되고, 일상생활이 가능합니다. <br>
+						수술자국이 남지 않습니다.
+						</p>
+					</div>
+					<p class="line"></p>
+					<div id="secondTwo">
+						<p>BEFORE<br><span>답답해 보이고 유독 작아 보이는 눈</span></p>
+						<img src="img/befor.jpg" alt='before' >
+					</div>
+					<p class="line"></p>
+					<div id="secondThree">
+						<p>AFTER<br><span>자국이 남지 않아 자연스럽고 시원해 보이는 눈</span></p>
+						<img src="img/after.jpg" alt='after' >
+					</div>
+					<p class="line"></p>
+				</div>
+				<script>
+					
+				</script>
+			</section>
+			<!---section 끝--->
+			
+			
+			<footer>
+				<div id="map">
+					<a href="#">위치</a> |
+					<a href="#">고객센터</a> |
+					<a href="#">사이트맵</a>
+				</div>
+				
+				<div id="law">
+					<a href="#">이용약관</a> |
+					<a href="#">개인정보처리방침</a> |
+					<a href="#">안전보건경영방침</a> |
+					<a href="#">윤리경영</a>
+				</div>
+				
+				<address>사업자등록번호:123-45-678910 대표:홍길동 통신판매업신고번호:12-123-123 개인정보 관리책임자:아사달<br>
+				사업장주소:서울특별시 가나다구 가나동 123번지  대표전화:(02)-123-1234 팩스번호:(02)123-1234<br>
+				COPYRIGHT 2007 THEJOEN CLINIC ALL RIGHT RESERVED.</address>
+			</footer>
+			<!---footer 끝--->
+		</div>
+	</body>
+
+</html>

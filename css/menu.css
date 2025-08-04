@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+
+body { 
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows : repeat(2, auto) 1fr;
+	grid-template-areas:	'header'
+									'section'
+									'footer';
+	margin:0 auto; max-width:61.25rem; font-family:"NotoSansKR", 고딕; font-weight:bold; /*background:url(../img/bg_grid.gif), url(../작업완성/re_menu_레이아웃_수정.jpg) no-repeat top center; */}
+
+/*header 얌*/
+header { 
+	grid-area:header;
+}
+	#top { 
+		display:flex; justify-content:space-between;
+		margin:-0.5rem 0 0 -8px;
+	}
+		#top h1 { padding-left:3.75rem;}
+		#top .gnv { transition: all 0.5s;}
+		.gnvR { transform: rotate(35deg);}
+		#top .gnv a { position: relative; right: 3px; top: 5px; font-size:2.2rem; padding:44px;}
+		
+/*section 얌*/
+section { grid-area:section; padding:1.2rem; margin-top:3rem; }
+		article h1 { margin-bottom:0.7rem; font-family:"휴먼엑스포", arial; font-size:1.5rem;}
+		li { margin-bottom:1.2rem; font-size:1rem;}
+			section a { color:#555;}
+			section a:hover { color:#000;}
+
+/*footer 얌*/
+footer { 
+	display:flex;
+	align-items:center;
+	grid-area:footer; 
+	background:#f5f5f5;
+}
+	footer div { padding:0 0.7rem; display:inline-block; font-size:1.2rem; }
+		footer div a { color:#333;}
+		footer div a:hover { color:#000;}

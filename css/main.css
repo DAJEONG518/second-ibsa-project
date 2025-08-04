@@ -1,0 +1,221 @@
+﻿@charset "utf-8";
+
+h2 { font-size:40px; font-family:Nexa; font-weight:bold;}
+
+
+body { margin:0 auto; max-width:61.25rem; font-family:"NotoSansKR", 고딕; font-weight:bold; /*background:url(../img/bg_grid.gif), url(../작업완성/레이아웃.img/re_main_레이아웃.jpg) no-repeat top center; */}
+
+#wrapper {
+	display: grid; 
+	grid-template-columns:1fr;
+	grid-template-rows : repeat(2, auto) 1fr;
+	grid-template-areas:	'header'
+									'section'
+									'footer';
+}
+
+/*header 얌*/
+header { 
+	grid-area:header;  
+}
+	#top { 
+		display:flex; 
+		justify-content:space-between;
+		margin-top:-0.5rem;
+	}
+		#top h1 { padding-left:3.75rem;}
+		#top .gnv { font-size:2.5rem;}
+			#top .gnv a{ padding:0 1.875rem 0 1.5625rem;}
+		#mainImg { 
+			display:flex; 
+			justify-content:center;
+			padding:0 2.5rem;
+		}
+			#mainImg img{ width:100%; object-fit:cover; margin-top:3rem; }
+		
+	
+	
+/*section 얌*/
+section { grid-area:section;}
+	#ourStory { 
+		height: 250px;
+		padding:6.2rem 0;
+		display:flex;
+		justify-content:center;
+		/*align-items: center;가운데로 보내기.*/
+	}
+		#ourStory h2 { position: relative; top: 80px; line-height:2.1rem;}
+		#rOur { padding-left:3.4rem; position: relative; width: 500px;}
+			/*#rOur div { }*/
+			#rOur div h3 { position: absolute; top:50px; font-size:1rem;}
+			#rOur div .our { position: absolute; top:60px; padding: 0.7rem 0; font-size:0.75rem; color:#666;}
+
+			#rOur .borderT { width: 0; height: 1px; background: #666; position: absolute; top: 90px; left: 45px; }/* 위에 선 450px */
+			#rOur .borderR { width: 1px; height: 0; background: #666; position: absolute; top: 90px; left: 220px; }/* 옆에 선 110px */	
+
+			#rOur .numOur { position: absolute; top: 95px; display:flex;  }/*110개 11000개 숫자돌아가기*/
+				#rOur .numOur div { align-self:flex-start; padding-left:1.4rem; }
+				#rOur .numOur div:nth-of-type(1) { padding-right:0.7rem;}
+					#rOur .numOur div h4 { color:#fe5622; font-size:3.125rem; letter-spacing: -0.1875rem;}
+						#rOur .numOur div h4 span { font-size:0.75rem;}
+					#rOur .numOur div p { color:#666; font-size:0.75rem;}
+		
+
+	#clinc, #notice {
+		position:relative;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		height:31.25rem;
+	}
+		#clinc>img, #notice>img {
+			object-fit:cover;
+			height:31.25rem;
+		} 
+		
+		#box { 
+			position:absolute;
+			display:flex;
+		}
+			#clinc .box, #notice .box {
+				width: 350px;
+				height:350px;
+			}
+			#clinc .left, #notice .left {  
+				position:relative;
+				left: 0; 
+				display:flex;
+				flex-direction: column;
+				background-color:#fff;
+				transition: all 0.7s;
+			}
+			#clinc .left:hover, #notice .left:hover {
+				background: #fe5622;
+				border-radius: 0 0 100% 0;
+				opacity: 0.9;
+			} 
+				#clinc .left h2, #notice .left h2 { 
+					position:absolute;
+					top:60px;
+					left:60px;
+					font-family:Nexa;
+					line-height:40px;
+				} 
+				#clinc .left h4, #notice .left h4{
+					position:absolute;
+					bottom:35px;
+					left:60px;
+					font-size:14px;
+					color:#fe5622;
+				}
+				#notice .left h2, #notice .left h4 { /*notice left다르게*/
+					left:40px;
+				}
+				#clinc .left:hover h2, #clinc .left:hover h4, #notice .left:hover h2, #notice .left:hover h4 {  
+					color:#fff
+				}
+			#clinc .right, #notice .right{ 
+				position:relative;
+				display:flex;
+				flex-direction: column;
+				justify-content:space-between;
+				margin-left:4px;
+			}
+				#clinc .right li, #notice .right li{ 
+					position: relative;
+					left: 0; 
+					height:75px;
+					width: 280px;
+					padding:10px 0 0 30px;
+					background-color:#fff;
+					font-size:18px;
+					border-radius:0 0 0 10px;
+					cursor: pointer;
+				}
+				#notice .right li{ 
+					height:65px;
+					padding:20px 0 0 30px;
+					font-size:14px;
+				}
+				#clinc .right li:nth-of-type(2), 
+				#clinc .right li:nth-of-type(3),
+				#notice .right li:nth-of-type(2), 
+				#notice .right li:nth-of-type(3) {
+					border-radius:10px 0 0 10px;
+				}
+				#clinc .right li:nth-of-type(4), 
+				#notice .right li:nth-of-type(4) { 
+					border-radius:10px 0 0 0;
+				}
+					#clinc .right li a { display: block; padding-bottom: 10px;}
+						#clinc .right li span, #notice .right li>span{ 
+							font-family:Nexa;
+							color:#666;
+							font-size:10px;
+						}
+						#notice .right li>span {/*notice 글꼴 다르게*/
+							font-family:"NotoSansKR", 고딕;
+						}
+						#clinc .right li p, #notice .right li p { 
+							position: absolute;
+							top: 30px;
+							right: 20px;
+							color:#999;
+							font-size:16px;
+							font-weight:normal;
+						}
+						#clinc .right li:hover p, #notice .right li:hover p { 
+							animation-name: 움찔;
+							animation-duration: 1s;
+							animation-iteration-count: infinite;/*반복*/
+						}
+					@keyframes 움찔 {
+						0%{ transform : translateX(3px);}
+						50%{ transform : translateX(-7px);}
+						100%{ transform : translateX(5px);}
+					}
+
+	#quick { 
+		height: auto;
+		padding:6.4rem 7.5rem;
+		display:grid;
+		grid-row-gap:2.6rem;
+	}
+		#quick h2 { 
+			display:flex;
+			justify-content: end;
+			padding:0 1rem 1rem 0;
+			line-height:2.8rem;
+			border-bottom:0.125rem solid #666;
+		}
+		#quick div { 
+			display: grid;
+			grid-template-columns: repeat(4, 1fr) ;
+			border-bottom:0.125rem solid #666;
+			
+		}
+		
+			#quick div .qmain { width:8.75rem; font-size:50px; font-family:Nexa; font-weight:bold; line-height:1.6rem;}
+			#quick div:nth-of-type(1) .qmain { letter-spacing: -7px;}
+			
+			#quick div .qsub, #quick div .sub { margin-top:-0.6rem;}
+			#quick div .qsub { margin-left:-1.4rem; line-height:1rem; color:#666; font-size:0.875rem;
+			}
+			#quick div .sub { 
+				grid-column:3/5;
+				margin-left:2rem; font-size:0.75rem;  
+				}
+				#quick div .sub a {display:block; color:#666; width:20.6rem; height:5.6rem;}
+					#quick div .sub a img { padding:0.8rem;}
+					#quick div .sub a:hover img { 
+						animation-name: 움찔;
+						animation-duration: 1s;
+						animation-iteration-count: infinite;/*반복*/
+					}
+		
+	
+/*footer 얌*/
+footer { grid-area:footer; padding:3.2rem 0 3.2rem 0;}
+	#map, #law { margin-left:-50px; display:inline-block; font-size:0.75rem; }
+	#law { margin-left:2rem;}
+	footer address { margin:20px 0 0 -50px; font-size:0.625rem; color:#666; line-height:-0.0625rem;}
