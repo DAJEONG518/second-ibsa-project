@@ -3,246 +3,146 @@
 	<head>
 		<meta charset="utf-8">
 		<title>더조은 피부과</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-		<script src="js/jquery.transit.min.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
-		
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/popUp.css">
-		<!--jQ-->
-		<script>
-			/*마우스 휠 내릴때 하나씩 나타나는 스크립트*/
-			$(function(){
-				$('#clinc,#quick,#notice').css({opacity:0})
-				
-				$(window).scroll(function(){
-					let clincT = $('#clinc').offset().top-1;
-					let quickT = $('#quick').offset().top-1;
-					let noticeT = $('#notice').offset().top-1;
-					let winT = $(this).scrollTop();
-					console.log(winT);
-
-					if (clincT >= winT){
-						$('#clinc').animate({opacity:1},1000);
-					}else if (quickT >= winT){
-						$('#quick').animate({opacity:1},1000);
-					}else if (noticeT >= winT){
-						$('#notice').animate({opacity:1},1000);
-					}
-				});
-
-				// 팝업창 닫기
-				$('.popUp p').click(function(){
-					$('.popUp').hide();
-				});
-			});
-		</script>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/main_media.css" />
+		<script src="js/index.js"></script>
 	</head>
 	
 	<body>
-		<!--div class="popUp">
-				<a href="#"><img src="img/baner.jpg" alt="이벤트배너" ></a>
-				<p>닫기X</p>
-		</div-->
 		<div id="wrapper">
-			<header>
-				<div id ="top">
-					<h1><a href="index.html"><img src="img/re_logo2.png" alt="logo" width="100%"></a></h1>
-					<p class="gnv"><a href="index_menu.html">&equiv;</a></p><!--아이콘 햄버거 표시임 걍 메뉴야-->
+			<header id="header">
+				<div class="header1">
+					<div>
+						<a href="#"><img src="img/re_logo2.png" alt="상단로고"></a>
+					</div>
+					<nav class="nav">
+						<a href="menu.html">☰</a>
+					</nav>
 				</div>
-				<div id="mainImg"><img src="img/메인이미지.jpg" alt="img"></div>
-<!--jQ-->	<script>
-					$(function(){
-						$('#mainImg').css({display:'none'});
-						$('#mainImg').fadeIn(2000);
-					});
-				</script>
-						
+				<div class="header2"></div>
 			</header>
-			<!---header 끝--->
-			
-			<section>
-				<div id="ourStory">
-					<h2> Our Story </h2>
-					<div id="rOur">
-						<div>
-							<h3>우리의 삶이 달라지고 당신의 마음이 더 성장하는 스토리</h3>
-							<p class="sub our">고객의 삶과 마음의 건강한 성장을 이룰 수 있도록 맞춤 서비스, 앞선 전문성, 새로운<br>
-							연결로 차별화 된 치료 솔류션을 제안하고 미래를 리딩하며 고객과 함께 성장하는 병원,<br>
-							우리는 더조은 피부과 입니다.</p>
-						</div>
-						<p class="borderT"></p>
-						<p class="borderR"></p>
-						<div class="numOur">
-							<div>
-								<h4 >110<span>개</span></h4><!---->
-								<p >광고없이 실제 고객들의<br>
-								110개의 뷰티라인 노하우</p>
-							</div>
-						
-							<div>
-								<h4 >11,000<span>개</span></h4><!--"-->
-								<p >총 1만 1천여개 고객들의<br>
-								생생한 후기</p>
-							</div>
-						</div>
-					</div>
-<!--jQ-->			<script>
-						$('#ourStory, #ourStory h2, #rOur div h3, #rOur div .our').css({opacity:0});
-						$('#ourStory').animate({opacity:1},2000);
-						$('#ourStory h2').animate({top: '0px',opacity:1},800, function(){
-							$('#rOur div h3').animate({top: '0px', opacity:1},800, function(){
-								$('#rOur div .our').animate({top: '20px', opacity:1},800);
-							});
-						});
-						
-						$('#rOur .borderT').delay(700).animate({width:'450px'},2200);
-						$('#rOur .borderR').delay(700).animate({height:'110px' },2200);
-						// 숫자만 돌아가면 됨.
-					</script>
-					
-				</div><!---1--->
-				
-				
-				<div id="clinc">
-					<img src="img/section1.jpg" alt="section1" width="100%">
+			<!-- header 끝-->
 
-					<div id="box">
-						<div class="left box">
-							<h2>Clinc &<br>Center</h2>
-							<h4><img src="img/comma.png" alt="comma" width="40px"><br>
-								새로운 도전과 앞선 서비스로<br>성형의 솔루션을 제시합니다.
-							</h4>
-						</div>
+			<section id="section1">
+				<h1>Our Story</h1>
+				<div>
+					<p>우리의 삶이 달라지고 당신의 마음이 더 성장하는 스토리</p>
+					<p>
+						고객의 삶과 마음의 건강한 성장을 이룰 수 있도록 맞춤 서비스, 앞선 전문성, 새로운 연결로 차별화된 치료 솔루션을 제안하고 미래를 리딩하며 고객과 함께 성장하는 병원, 우리는 더조은 피부과 입니다
+						<a href="greetings.html"><img src="img/arrow.png" alt="인사말 이동화살표"></a>
+					</p>
+				</div>
+			</section><!-- section1 끝-->
 
-						<ul class="right box">
-								<li >
-									<a href="index_sub1.html">
-										<span>DOUBLE EYELID</span><br>눈성형 
-										<p>&gt;</p> 
-									</a>
-								</li>
-							
-							<li>
-								<span>RHINOPLASTY</span><br>코성형
+			<section id="section2">
+				<div class="section2_1">
+					<h1>Clinc&<br>Center</h1>
+					<p>
+						<img src="img/comma.png" alt="컴마"><br>
+						새로운 도전과 앞선 서비스로<br>성형의 솔루션을 제시합니다
+					</p>
+				</div>
+				<nav class="section2_2">
+					<ul>
+						<li>
+							<a href="eyelid.html">
+								<p><span>DOUBLE EYELID</span><br>눈성형</p>
 								<p>&gt;</p>
-							</li>
-							<li><span>MAMMAPLASTY</span><br>가슴성형
-								<p>&gt;</p>
-							</li>
-							<li><span>MAXILLO</span><br>안면윤곽
-								<p>&gt;</p>
-							</li>
-						</ul>
-					</div>
-<!--jQ-->		<script>
-						$('.left').mouseenter(function(){
-							$('.left h4').css({bottom:'80px'});
-							$('.left h4').stop().animate({bottom:'100px'},500);
-							$('.left h4 img').css({display:'none'});
-						});
-						$('.left').mouseleave(function(){
-							$('.left h4').css({bottom:'85px'});
-							$('.left h4').stop().animate({bottom:'35px'},500, function(){
-								$('.left h4 img').slideDown();
-							});
-						});
-					</script>
-				</div><!---2--->				
-				
-				<div id="quick">
-					<h2> QuickLink </h2>
+							</a>
+						</li>
+						<li>
+							<p><span>RHINOPLASTY</span><br>코성형</p>
+							<p>&gt;</p>
+						</li>
+						<li>
+							<p><span>MAMMAPLASTY</span><br>가슴성형</p>
+							<p>&gt;</p>
+						</li>
+						<li>
+							<p><span>MAXILLO</span><br>안면윤곽</p>
+							<p>&gt;</p>
+						</li>
+					</ul>
+				</nav>
+			</section><!-- section2 끝-->
+
+			<section id="section3">
+				<h1 class="section3_1">QuickLink</h1>
+				<div class="section3_2">
 					<div>
-						<p class="qmain">RVW</p>
-						<p class="qsub">미녀들의<br>솔직한 체험후기</p>
-						<p class="sub">
-							<a href="#">어떤게 좋은지, 어떤 게 편했는지<br>우리 고객들의 리얼 후기를 확인해 볼 수 있습니다.<br>
-							<img src="img/arrow.png" alt="화살표"></a>
-						</p>
+						<h2>RVW</h2>
+						<span>미녀들의<br>솔직한 체험후기</span>
 					</div>
-					
 					<div>
-						<p class="qmain">SNS</p>
-						<p class="qsub">나만의<br>뷰티라인 노하우</p>
-						<p class="sub">
-							<a href="#">궁금한건 묻고, 꿀팁은 나눈 우리만의 공간<br>나와 같은 사람들과 자유롭게 노하우를 알아 볼 수 있습니다.<br>
-							<img src="img/arrow.png" alt="화살표"></a>
-						</p>
+						어떤게 좋은지, 어떤게 편했는지<br>우리 고객들의 리얼 후기를 확인해 볼 수 있습니다<br>
+						<img src="img/arrow.png" alt="체험후기 이동 화살표">
 					</div>
-<!--jQ-->		<script>
-
-						
-					</script>				
-				</div><!---3--->
-				
-				
-				<div id="notice">
-					<img src="img/section2.jpg" alt="section1" width="100%">
-					<div id="box">
-						<div class="left box">
-							<h2>New Notice</h2>
-							<h4><img src="img/comma.png" alt="comma" width="40px"><br>더조은의 가장 새로운 소식과 이벤트를<br>한 눈에 확인 할 수 있습니다.</h4>
-						</div>
-<!--jQ-->			<script>
-						$('.left').mouseenter(function(){
-							$('.left h4').css({bottom:'100px'});
-							$('.left h4').stop().animate({bottom:'150px'},500);
-							$('.left h4 img').css({display:'none'});
-						});
-						$('.left').mouseleave(function(){
-							$('.left h4').css({bottom:'85px'});
-							$('.left h4').stop().animate({bottom:'35px'},500, function(){
-								$('.left h4 img').slideDown();
-							});
-							
-						});
-					</script>
-
-						<ul class="right box">
-							<li>
-								<span>[2025-01-18]</span><br>설연휴 월차사항 안내...
-								<p>&gt;</p>
-							</li>
-							<li>
-								<span>[2025-01-10]</span><br>디자인몰 컨텐츠 100만개 돌파...
-								<p>&gt;</p>
-							</li>
-							<li><span>[2025-01-08]</span><br>아사 TSD, 신제품 출시기념 런칭쇼...
-								<p>&gt;</p>
-							</li>
-							<li><span>[2025-01-05]</span><br>ASA홈쇼핑, 2025 아사신문 한국대...
-								<p>&gt;</p>
-							</li>
-						</ul>
-					</div>	
 				</div>
-				
-			</section>
-			<!---section 끝--->
-			
-			
-			<footer>
-				<div id="map">
-					<a href="#">위치</a> |
-					<a href="#">고객센터</a> |
-					<a href="#">사이트맵</a>
+				<div class="section3_3">
+					<div>
+						<h2>SNS</h2>
+						<span>나만의<br>뷰티라인 노하우</span>
+					</div>
+					<div>
+						궁금한건 묻고, 꿀팁은 나누는 우리만의 공간,<br>나와같은 사람들과 자유롭게 노하우를 알아 볼 수 있습니다<br>
+						<img src="img/arrow.png" alt="노하우 이동 화살표">
+					</div>
 				</div>
-				
-				<div id="law">
-					<a href="#">이용약관</a> |
-					<a href="#">개인정보처리방침</a> |
-					<a href="#">안전보건경영방침</a> |
-					<a href="#">윤리경영</a>
-				</div>
+			</section><!-- section3 끝-->
 
-				<address>사업자등록번호:123-45-678910 대표:홍길동 통신판매업신고번호:12-123-123 개인정보 관리책임자:아사달<br>
+			<section id="section4">
+				<div class="section4_1">
+					<h1>NewNotice</h1>
+					<p>
+						<img src="img/comma.png" alt="컴마"><br>
+						더조은의 가장 새로운 소식과 이벤트를<br>한 눈에 확인 할 수 있습니다
+					</p>
+				</div>
+				<nav class="section4_2">
+					<ul>
+						<li>
+							<p><span>[2025-04-18]</span><br>설연휴 월차 사항안내...</p>
+							<p>&gt;</p>
+						</li>
+						<li>
+							<p><span>[2025-03-18]</span><br>디자인몰 컨텐츠 100만개 돌파...</p>
+							<p>&gt;</p>
+						</li>
+						<li>
+							<p><span>[2025-02-18]</span><br>아사  TSD 신제품 출시기념 런칭쇼...</p>
+							<p>&gt;</p>
+						</li>
+						<li>
+							<p><span>[2025-01-18]</span><br>ASA홈쇼핑 2025 아사신문 한국대...</p>
+							<p>&gt;</p>
+						</li>
+					</ul>
+				</nav>
+			</section><!-- section4 끝-->
+			<!-- section 끝-->
+			 
+			<footer id="footer">
+				<div class="footerWrap">
+					<div class="map">
+						<a href="#">위치</a> |
+						<a href="#">고객센터</a> |
+						<a href="#">사이트맵</a>
+					</div>
+
+					<div class="law">
+						<a href="#">이용약관</a> |
+						<a href="#">개인정보처리방침</a> |
+						<a href="#">안전보건경영방침</a> |
+						<a href="#">윤리경영</a>
+					</div>
+				</div>
+				<address>
+					<img src="img/re_logo2.png" alt="footer로고"><br>
+					사업자등록번호:123-45-678910 대표:홍길동 통신판매업신고번호:12-123-123 개인정보 관리책임자:아사달<br>
 				사업장주소:서울특별시 가나다구 가나동 123번지  대표전화:(02)-123-1234 팩스번호:(02)123-1234<br>
 				COPYRIGHT 2007 THEJOEN CLINIC ALL RIGHT RESERVED.</address>
 			</footer>
-			<!---footer 끝--->
+			<!-- footer 끝-->
 		</div>
 	</body>
-
 </html>

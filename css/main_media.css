@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+#header .header1 { 
+	padding: 0 10px;
+}
+#header .header2 { 
+		height: 400px;
+        background: url(../img/mainImg.jpg) no-repeat top/100%;
+	}
+/*header 끝*/
+
+#section1 { 
+    flex-direction: column;
+    padding: 100px 40px;
+    box-sizing: border-box;
+}
+    #section1 h1 { 
+		margin-right: 0;
+        width: 100%;
+        text-align: left;
+		font-size: 40px;
+	}
+	#section1 div { 
+		width: 100%;
+		font-size: 14px;
+		box-sizing: border-box;
+	}
+		#section1 div p:nth-of-type(1){ 
+			font-size: 18px;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+        #section1 div a img { 
+				width: 60px;
+			}
+/*section1 끝*/
+
+#section2,
+#section4 { 
+    flex-direction: column;
+	padding: 80px 60px;
+    box-sizing: border-box;
+}
+	#section2 .section2_1,
+	#section4 .section4_1 { 
+		margin-right: 0;
+		margin-bottom: 10px;
+        padding-left: 50px;
+		width: 100%;
+		height: 250px;
+	}
+		#section2 .section2_1 h1,
+		#section4 .section4_1 h1 { 
+			font-size: 40px;
+		}
+		#section2 .section2_1 p, 
+		#section4 .section4_1 p { 
+			font-size: 14px;
+		}
+			#section2 .section2_1 p img, 
+			#section4 .section4_1 p img { 
+				width: 40px;
+			}
+	#section2 .section2_2,	
+	#section4 .section4_2 {	
+		width: 100%;
+		height: 430px;
+	}
+	#section2 .section2_2 ul li,
+	#section4 .section4_2 ul li {
+		padding: 0 30px 0 50px;
+		height: 100px;
+		border-radius: 0 0 0 10px;
+	}
+	#section2 .section2_2 ul li:nth-of-type(2), #section2 .section2_2 ul li:nth-of-type(3),
+	#section4 .section4_2 ul li:nth-of-type(2), #section4 .section4_2 ul li:nth-of-type(3)  { 
+		border-radius: 10px 0 0 10px;
+	}
+	#section2 .section2_2 ul li:nth-of-type(4),	
+	#section4 .section4_2 ul li:nth-of-type(4){
+		border-radius: 10px 0 0 0;
+	}
+		#section2 .section2_2 ul li p {
+			font-size: 18px;
+		}
+		#section2 .section2_2 ul li p span,
+		#section4 .section4_2 ul li p span {
+			font-size: 14px;
+		}
+	#section2 .section2_2 ul li a {	
+		height: 100px;
+	}
+		#section2 .section2_2 ul li a p {
+			font-size: 18px;
+		}
+			#section2 .section2_2 ul li a p span {
+			font-size: 14px;
+			}
+/*section2 끝*/
+
+#section3 { 
+	padding: 100px 40px;
+}
+	#section3 .section3_1 { 
+		font-size: 40px;
+		width: 100%;
+	}
+	#section3 .section3_2,
+	#section3 .section3_3{
+		width: 100%;
+	}
+		#section3 .section3_2 div,
+		#section3 .section3_3 div {
+			width: 50%;
+		}
+		#section3 .section3_2 div:nth-of-type(2),
+		#section3 .section3_3 div:nth-of-type(2) { 
+			font-size: 14px;
+		}
+			#section3 .section3_2 div h2,
+			#section3 .section3_3 div h2 { 
+				font-size: 40px;
+			}
+			#section3 .section3_2 div span,
+			#section3 .section3_3 div span { 
+				left: 80px;
+				top: 8px;
+				font-size: 14px;
+				line-height: 14px;
+			}
+			#section3 .section3_2 div img,
+			#section3 .section3_3 div img {
+				width: 60px;
+			}
+/*section3 끝*/
+#section4 .section4_2 ul li p {
+	font-size: 18px;
+}
+#section4 .section4_2 ul li p:nth-last-child(1) {
+	font-size: 18px;
+}
+/*section4 끝*/
+
+#footer { 
+	padding: 100px 40px;
+    box-sizing: border-box;
+}
+	#footer .footerWrap { 
+		width: 100%;
+	}
+		#footer .footerWrap div { 
+			font-size: 12px;
+		}
+		#footer .footerWrap .map { 
+			margin-right: 30px;
+		}
+	#footer>address { 
+		margin-top: 20px;
+		width: 100%;
+		font-size: 10px;
+	}
+		#footer>address img { 
+			width: 100px;
+		}
+/*footer 끝*/
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+#header .header1 { 
+	padding: 0px;
+}
+    #header .header1 div a img { 
+			width: 60px;
+		}
+#header .header2 { 
+		height: 260px;
+	}
+/*header 끝*/
+
+#section1 { 
+    flex-direction: column;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+    #section1 h1 { 
+		margin-right: 0;
+        width: 100%;
+        text-align: left;
+		font-size: 24px;
+	}
+	#section1 div { 
+		width: 100%;
+		font-size: 8px;
+		box-sizing: border-box;
+	}
+		#section1 div p:nth-of-type(1){ 
+			font-size: 10px;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+        #section1 div a img { 
+				width: 40px;
+			}
+/*section1 끝*/
+
+#section2,
+#section4 { 
+    flex-direction: column;
+	padding: 40px 20px;
+    box-sizing: border-box;
+}
+	#section2 .section2_1,
+	#section4 .section4_1 { 
+		margin-right: 0;
+		margin-bottom: 5px;
+        padding-left: 30px;
+		width: 100%;
+		height: 200px;
+	}
+		#section2 .section2_1 h1,
+		#section4 .section4_1 h1 { 
+			font-size: 24px;
+		}
+		#section2 .section2_1 p, 
+		#section4 .section4_1 p { 
+			font-size: 8px;
+		}
+			#section2 .section2_1 p img, 
+			#section4 .section4_1 p img { 
+				width: 20px;
+			}
+	#section2 .section2_2,	
+	#section4 .section4_2 {	
+		width: 100%;
+		height: 335px;
+	}
+	#section2 .section2_2 ul li,
+	#section4 .section4_2 ul li {
+		padding: 0 30px;
+		height: 80px;
+		border-radius: 0 0 0 5px;
+	}
+	#section2 .section2_2 ul li:nth-of-type(2), #section2 .section2_2 ul li:nth-of-type(3),
+	#section4 .section4_2 ul li:nth-of-type(2), #section4 .section4_2 ul li:nth-of-type(3)  { 
+		border-radius: 5px 0 0 5px;
+	}
+	#section2 .section2_2 ul li:nth-of-type(4),	
+	#section4 .section4_2 ul li:nth-of-type(4){
+		border-radius: 5px 0 0 0;
+	}
+		#section2 .section2_2 ul li p {
+			font-size: 10px;
+		}
+		#section2 .section2_2 ul li p span,
+		#section4 .section4_2 ul li p span {
+			font-size: 8px;
+		}
+	#section2 .section2_2 ul li a {	
+		height: 80px;
+	}
+		#section2 .section2_2 ul li a p {
+			font-size: 10px;
+		}
+			#section2 .section2_2 ul li a p span {
+			font-size: 8px;
+			}
+/*section2 끝*/
+
+#section3 { 
+	padding: 80px 20px;
+}
+	#section3 .section3_1 { 
+		font-size: 24px;
+		width: 100%;
+	}
+	#section3 .section3_2,
+	#section3 .section3_3{
+        display: inline-block;
+        padding: 20px 0px;
+		width: 100%;
+	}
+		#section3 .section3_2 div,
+		#section3 .section3_3 div {
+            margin-bottom: 10px;
+			width: 100%;
+		}
+		#section3 .section3_2 div:nth-of-type(2),
+		#section3 .section3_3 div:nth-of-type(2) { 
+			font-size: 8px;
+		}
+			#section3 .section3_2 div h2,
+			#section3 .section3_3 div h2 { 
+				font-size: 24px;
+			}
+			#section3 .section3_2 div span,
+			#section3 .section3_3 div span { 
+				left: 50px;
+				top: 5px;
+				font-size: 8px;
+				line-height: 8px;
+			}
+			#section3 .section3_2 div img,
+			#section3 .section3_3 div img {
+                bottom: -10px;
+				width: 20px;
+			}
+/*section3 끝*/
+#section4 .section4_2 ul li p {
+	font-size: 10px;
+}
+#section4 .section4_2 ul li p:nth-last-child(1) {
+	font-size: 10px;
+}
+/*section4 끝*/
+
+#footer { 
+	padding: 80px 20px;
+    box-sizing: border-box;
+}
+	#footer .footerWrap { 
+		width: 100%;
+	}
+		#footer .footerWrap div { 
+			font-size: 8px;
+		}
+		#footer .footerWrap .map { 
+			margin-right: 10px;
+		}
+	#footer>address { 
+		margin-top: 20px;
+		width: 100%;
+		font-size: 8px;
+	}
+		#footer>address img { 
+			width: 100px;
+		}
+/*footer 끝*/
+
+}
