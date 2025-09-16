@@ -4,7 +4,7 @@ let section4 = document.querySelector('.section4_1');
 
 section2.addEventListener('mouseover', function(){
     this.style.backgroundColor = '#FE5723';
-    this.style.borderRadius = '0 0 100% 0';
+    this.style.borderRadius = '0 0 50% 0';
     this.style.transition = 'all 0.5s'
 });
 section2.addEventListener('mouseout', function(){
@@ -14,7 +14,7 @@ section2.addEventListener('mouseout', function(){
 
 section4.addEventListener('mouseover', function(){
     this.style.backgroundColor = '#FE5723';
-    this.style.borderRadius = '0 0 100% 0';
+    this.style.borderRadius = '0 0 50% 0';
     this.style.transition = 'all 0.5s'
 });
 section4.addEventListener('mouseout', function(){

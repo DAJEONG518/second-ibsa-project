@@ -118,6 +118,8 @@ a{ text-decoration:none; color:#000;}
 		}
 		#section2 .section2_1 p, 
 		#section4 .section4_1 p { 
+			position: relative;
+			top: 0;
 			font-size: 24px;
 			font-weight: bold;
 			color: #FE5723;
@@ -359,3 +361,20 @@ a{ text-decoration:none; color:#000;}
 		right: 40px;
 	}
 }
+
+/* 스타일링*/
+#section2 .section2_2 ul .secLink:hover {
+		transition: all 0.5s;
+		transform: scale(1.05);
+		background-color: #FE5723;
+	}
+	#section2 .section2_1:hover p, 
+	#section4 .section4_1:hover p { 
+		transition: all 0.8s;
+		top: -250px;
+		color: #fff;
+	}
+		#section2 .section2_1:hover p img, 
+		#section4 .section4_1:hover p img { 
+			display: none;
+		}

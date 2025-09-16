@@ -165,7 +165,11 @@
 			width: 100px;
 		}
 /*footer 끝*/
-
+/*스타일링*/
+#section2 .section2_1:hover p, 
+#section4 .section4_1:hover p { 
+	top: 0;
+}
 }
 
 
@@ -340,5 +344,9 @@
 			width: 100px;
 		}
 /*footer 끝*/
-
+/*스타일링*/
+#section2 .section2_1:hover p, 
+#section4 .section4_1:hover p { 
+	top: 0;
+}
 }
