@@ -1,4 +1,0 @@
-@charset "utf-8";
-.popUp { position: absolute; left: 0; z-index: 999; width: 100%; height: 100%; background-color: rgba(0,0,0, 0.5);}
-    .popUp img { width: 400px; height: 500px;}
-    .popUp p { width: 400px; height: 30px; line-height: 30px; text-align: center; cursor: pointer; background-color: aliceblue; }

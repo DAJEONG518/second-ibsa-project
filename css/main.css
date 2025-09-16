@@ -288,13 +288,14 @@ a{ text-decoration:none; color:#000;}
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 150px 0;
+	padding: 100px 80px;
 	width: 100%;
 	height: 100%;
+	background-color: #eaeaea;
 }
 	#footer .footerWrap { 
 		display: flex;
-		width: 85%;
+		width: 100%;
 		height: 100%;
 	}
 		#footer .footerWrap div { 
@@ -309,7 +310,7 @@ a{ text-decoration:none; color:#000;}
 		}
 	#footer>address { 
 		margin-top: 50px;
-		width: 85%;
+		width: 100%;
 		height: 100%;
 		font-size: 16px;
 		font-weight: bold;
