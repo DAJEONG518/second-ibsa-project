@@ -132,7 +132,8 @@ a{ text-decoration:none; color:#000;}
 			}
 		#section2 .section2_1 a{
 			position: relative;
-			width: 144px;
+			width: 155px;
+			height: 92px;
 			overflow: hidden;
 		}
 			#section2 .section2_1 a img{
