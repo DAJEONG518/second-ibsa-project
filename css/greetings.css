@@ -1,4 +1,9 @@
 ﻿@charset "utf-8";
+* { margin:0; padding:0; font-family: 'Noto Sans KR', 'Arial Narrow', Arial, sans-serif;}
+li { list-style-type:none;}
+img { border:0; vertical-align:middle;}
+em,address { font-style:normal;}
+a{ text-decoration:none; color:#000;}
 
 body { margin:0 auto; max-width:61.25rem; font-family:"NotoSansKR", 고딕; font-weight:bold; /* background:url(../img/bg_grid.gif), url(../작업완성/re_sub01_레이아웃_수정.jpg) no-repeat top center; */}
 
@@ -31,9 +36,9 @@ section{
 	grid-area:section;
 }
 	video {  width: 100%; margin: 0 auto;margin-top:3rem;}
-	#one {  margin-left: 10px; display: none;}
+	#one {  margin-left: 10px;}
 		#one h3{ font-size:1.5rem;}
-	#two { margin-top:50px; margin-left: 10px; font-size:0.875rem; color:#666; display: none;}
+	#two { margin-top:50px; margin-left: 10px; font-size:0.875rem; color:#666;}
 		#two div { padding-bottom:1.4rem;}
 
 /*footer 얌얌*/
