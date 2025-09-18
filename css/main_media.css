@@ -179,8 +179,9 @@
 	padding: 0px;
 }
     #header .header1 div a img { 
-			width: 60px;
-		}
+		padding-left: 22px;
+		width: 60px;
+	}
 #header .header2 { 
 		height: 260px;
 	}
