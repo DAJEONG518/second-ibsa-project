@@ -4,77 +4,65 @@
 	<head>
 		<meta charset="utf-8">
 		<title>더조은 피부과_menu</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-		<script src="js/jquery.transit.min.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
-		
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
-		
-		<style>
-		</style>
 	</head>
 	
 	<body>
-		<header>
-			<div id ="top">
-				<h1><a href="index.html"><img src="img/re_logo2.png" alt="logo" width="100%"></a></h1>
-				<p class="gnv"><a href="#" onclick="history.back()"> &#10005;</a></p>
-			</div>
-		</header>
-	<!---header 끝--->
-		<nav>
-			<section>
-				<img src="img/comma.png" alt="" width="40px">
-				<article id="about">
-					<h1>About Clinic</h1>
-					<ul>
-						<li><a href="greetings.html">인사말</a></li>
-						<li><a href="#">의료진소개</a></li>
-						<li><a href="#">둘러보기</a></li>
-						<li><a href="#">보도자료</a></li>
-						<li><a href="#">진료안내</a></li>
-						<li><a href="#">오시는길</a></li>
-					</ul>
-				</article><!--1-->
-				
-				<article id="Beauty">
-					<h1>Beauty Clinic</h1>
-					<ul>
-						<li><a href="eyelid.html">눈성형</a></li>
-						<li><a href="#">코성형</a></li>
-						<li><a href="#">안면윤곽</a></li>
-						<li><a href="#">가슴성형</a></li>
-					</ul>
-				</article><!--2-->
-				
-				<article id="cs">
-					<h1>CounSeling</h1>
-					<ul>
-						<li><a href="#">1:1온라인상담</a></li>
-						<li><a href="#">비공개상담</a></li>
-						<li><a href="#">수술 후 상담</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul>
-				</article><!--3-->
-				
-				<article id="data">
-					<h1>Data Room</h1>
-					<ul>
-						<li><a href="#">예약하기</a></li>
-						<li><a href="#">예약조회 및 변경</a></li>
-					</ul>
-				</article><!--4-->
-			</section>
-		<!---section 끝--->
-		
-			<footer>
-				<div><a href="#">위치 &gt;</a></div>
-				<div><a href="#">고객센터 &gt;</a></div>
-			</footer>
-		<!---footer 끝--->
-		</nav>	
-	</body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="header1">
+					<div>
+						<a href="index.html"><img src="img/re_logo2.png" alt="상단로고"></a>
+					</div>
+					<nav class="nav">
+						<a href="#" onclick="history.back()">&#10005;</a>
+					</nav>
+				</div>
+			</header>
+			<!-- header 끝-->
 
+			<section id="section">
+				<div id="menu">
+					<img src="img/comma.png" alt="" width="30px">
+					<ul>
+						<li>About Clinic
+							<ul class="submenu">
+								<li><a href="greetings.html" class="menulink">인사말</a></li>
+								<li><a href="#">둘러보기</a></li>
+								<li><a href="#">보도자료</a></li>
+								<li><a href="#">진료안내</a></li>
+							</ul>
+						</li>
+						<li>Beauty Clinic
+							<ul class="submenu">
+								<li><a href="eyelid.html" class="menulink">눈성형</a></li>
+								<li><a href="">코성형</a></li>
+								<li><a href="">안면윤곽</a></li>
+								<li><a href="">가슴성형</a></li>
+							</ul>
+						</li>
+						<li>CounSeling
+							<ul class="submenu">
+								<li><a href="">1:1온라인상담</a></li>
+								<li><a href="">비공개상담</a></li>
+								<li><a href="">수술 후 상담</a></li>
+								<li><a href="">FAQ</a></li>
+							</ul>
+						</li>
+						<li>Data Room
+							<ul class="submenu">
+								<li><a href="">예약하기</a></li>
+								<li><a href="">예약조회 및 변경</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<article>
+					<div><a href="#">위치 &gt;</a></div>
+					<div><a href="#">고객센터 &gt;</a></div>
+				</article>
+			</section>
+			<!-- section 끝-->
+		</div>
+	</body>
 </html>
