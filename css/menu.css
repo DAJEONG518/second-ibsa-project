@@ -52,7 +52,6 @@ a{ text-decoration:none; color:#000;}
 		height: 100%;
 		overflow: hidden;
 	}
- 	#menu > ul {  }
  	#menu > ul > li {  
 		font-family: 'Roboto','Arial Narrow', Arial, sans-serif;
 		font-size: 32px;
@@ -61,10 +60,9 @@ a{ text-decoration:none; color:#000;}
  	#menu > ul > li > ul {  
 		margin-bottom: 30px;
 	}
- 	#menu > ul > li > ul > li { }
  	#menu > ul > li > ul > li > a {  
 		display: block;
-		padding: 10px 5px;
+		padding: 15px 5px;
 		font-size: 20px;
 		font-weight: normal;
 	}
@@ -88,12 +86,19 @@ article {
 	height: 100px;
 	background-color: rgba(255, 77, 0, 0.9);
 }
-	article > div { 
-		padding-right: 20px;
-	}
 	article > div > a { 
+		display: block;
+		position: relative;
+		left: 0;
+		top: 0;
+		padding-right: 30px;
+		width: 100%;
 		font-size: 20px;
 		color: #fff;
+	}
+	article > div > a:hover { 
+		transition: all 0.5s;
+		transform: scale(1.1);
 		text-shadow: 3px 3px 5px rgb(42, 42, 42);
 	}
 /*section 끝*/
