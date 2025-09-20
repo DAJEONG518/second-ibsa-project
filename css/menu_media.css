@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* *************태블릿********** */
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+#header .header1 { 
+	padding: 0 10px;
+}
+/*header 끝*/
+
+#section {
+	padding: 0 10px;
+ }
+ 	#menu > ul > li {  
+		font-size: 24px;
+	}
+ 	#menu > ul > li > ul > li > a {  
+		padding: 10px 5px;
+		font-size: 16px;
+	}
+ 	#menu > ul > li > ul > li > .menulink:hover { 
+		padding-left: 15px;
+		border-radius: 2px;
+	}
+
+article { 
+	padding: 0 10px;
+}
+	article > div > a { 
+		font-size: 16px;
+	}
+/*section 끝*/
+}
+
+/* **************모바일****************** */
+@media screen and (max-width: 767px) {
+
+#header .header1 { 
+	padding: 0px;
+}
+    #header .header1 div a img { 
+        padding-left: 22px;
+		width: 60px;
+	}
+/*header 끝*/
+
+#section {
+	padding: 0 10px;
+ }
+    #menu { 
+		margin-bottom: 70px;
+	}
+ 	#menu > ul > li {  
+		font-size: 24px;
+	}
+ 	#menu > ul > li > ul {  
+		margin-bottom: 20px;
+	}
+ 	#menu > ul > li > ul > li > a {  
+		padding: 10px 5px;
+		font-size: 14px;
+	}
+ 	#menu > ul > li > ul > li > .menulink:hover { 
+		padding-left: 15px;
+		border-radius: 2px;
+	}
+
+article { 
+    height: 70px;
+	padding: 0 10px;
+}
+	article > div > a { 
+        padding-right: 20px;
+		font-size: 16px;
+	}
+/*section 끝*/
+}
